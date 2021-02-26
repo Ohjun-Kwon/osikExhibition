@@ -101,7 +101,8 @@ h7{font-size : 0.8em;}
 	display : block;
 	float : right;
 	height : 60px;
-	width : 150px;
+	max-width : 150px;
+	width : 20%;
 	text-align : center;
 	letter-spacing: 0.275rem;	
 	font-size : 0.9em;
@@ -109,7 +110,8 @@ h7{font-size : 0.8em;}
 
 #head-bar a{
 	display : inherit;
-	width : inherit;
+	width : 100%;
+	max-width : 150px;
 	height : inherit;
 	color : white;
 	text-decoration: none;

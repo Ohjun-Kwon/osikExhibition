@@ -123,10 +123,6 @@ h7{font-size : 0.8em;}
 	animation: change_color 0.2s;
 }
 
-
-
-
-
 #mainslide
 {
 	width : 100%;
@@ -138,6 +134,12 @@ h7{font-size : 0.8em;}
 	background-attachment: fixed;
 	animation: fadein 1s;
 	padding : 5%;
+}
+#mainslide::after{
+	content : '';
+	vertical-align : middle;
+	display:inline-block;
+	height : 90%;
 }
 .maintitle
 {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang = "ko">
 	<link rel="stylesheet" type="text/css" href="css/main_style.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
 	<head>
 		
 		<script src="scripts/jquery-3.5.1.min.js"></script>
@@ -43,22 +44,25 @@
 				<span class = "Lbold">ABOUT ME<br>|</span>
 					안녕하세요. 경험을 배달하는 개발자 <span class = "Lbold">권오준</span>입니다.<br>
 				제가 개발할 때 제일 중심으로 두는 것은 사용자에게 어떠한 경험을 전달할 것이냐입니다.
-				제 목표는 앞으로도 더 많은 사람들에게 즐거운 경험을 전달하는 개발자가 되고 싶습니다.<br>냥냥냥 뭘 쓸지 모르겠다냥냥냥
+				제 목표는 앞으로도 더 많은 사람들에게 즐거운 경험을 전달하는 개발자가 되고 싶습니다.
 				</h5>
 				
 			</div>
 		</section>
 	
-		<div id = "project_title">PROJECTS</div>
-		<div id = "annual_button">
-			<label class="box-radio-input"><input type="radio" name="cp_item" value="2019" checked="checked"><span>2019</span></label>
-			<label class="box-radio-input"><input type="radio" name="cp_item" value="2018" checked="checked"><span>2018</span></label>
-			<label class="box-radio-input"><input type="radio" name="cp_item" value="2017" checked="checked"><span>2017</span></label>
+		<div id = "project_title">PROJECTS
+	
+			<div id = "annual_button">
+			<label class="box-radio-input"><input type="radio" name="cp_item" id = "2019" value="2019" checked="checked" onchange = "setDisplay()"><span>2019</span></label>
+			<label class="box-radio-input"><input type="radio" name="cp_item" id = "2018" value="2018" onchange = "setDisplay()"><span>2018</span></label>
+			<label class="box-radio-input"><input type="radio" name="cp_item" value="2017" id = "2017"onchange = "setDisplay()"><span>2017</span></label>
 		</div>
-		<div id = "project_image"><>
-		<section id = "project_shower">
+	</div>
+
+		<div id = "project_image">
+		<section class = "project_shower" id = "page1">
 			<section class = "content">
-				<img src = "image/projects/project1.png"></img>
+				<img src = "image/projects/project1.png">
 				<p>
 					<span class = "Lbold">더스파이크</span>
 				<p> GM:S2 를 통해 개발한 2D 배구 액션 게임입니다. <br>
@@ -67,11 +71,81 @@
 					캐릭터 디자인, 일러스트 , 그래픽 , UI 디자인 부분 제작에도 참가하였습니다.
 				</p>
 				</p>
+			<div class = "award">
+			2017 GIGDC 중고등부 제작 부문 동상 수상(한국 게임 개발자협회장상)<br>
+			2017 KWC IT 콘텐츠 부문 최우수상 수상(대전 광역시 교육장상)</div>
 			</section>
 			<section class = "content">
-							<img src = "image/pic01.jpg"></img>
+							<img src = "image/pic01.jpg">
 							<p>
-								<span class = "Lbold">제목1</span>
+								<span class = "Lbold">Run With You</span>
+							<p> Run With You라는 프로젝트는, 헬스케어용 웹사이트로 달리기를 할 때,
+								이 웹사이트를 키고 달리면 몇 분 간격으로 사용자의 위치 그리고 그 속도를 데이터로 저장하여
+								달리고 나서 자신이 어떻게 달렸는지를 재현할 수 있는 웹사이트입니다.
+								Naver 지도 API와 Geolocation API를 통해 개발하였습니다. 
+							</p>
+							</p>
+			</section>
+			<section class = "content">
+				<img src = "image/pic01.jpg"></img>
+				<p>
+				<span class = "Lbold">Warker</span>
+				<p> 파이썬의 Pygame와 Tkinter을 통해 연습용으로 개발한 게임 프로젝트입니다. 좌우로 움직이며 상단에서 내려오는 적을 맞추는 간단한
+					슈팅 게임입니다. 무기를 주워 다른 무기로 바꿀 수 있으며 스코어에 따라 더 강력한 적이 내려오게 됩니다.
+					
+				</p></p>
+				
+			</section>
+		</section>
+
+
+
+		<section class = "project_shower" id = "page2" style = "display : none">
+			<section class = "content">
+					<img src = "image/pic01.jpg">
+					<p>
+						<span class = "Lbold">큐브 디펜스</span>
+					<p> ...
+					</p>
+					<div class = "award">
+					2018 GIGDC 중고등부 제작 부문 동상 수상(한국 게임 개발자협회장상)<br></div>
+					</p>
+			</section>
+			<section class = "content">
+							<img src = "image/pic01.jpg">
+							<p>
+								<span class = "Lbold">두들 슬라임</span>
+							<p> ...
+							</p>
+							<div class = "award">
+							2016 GIGDC 중고등부 제작 부문 대상 수상(문화체육부장관상)<br></div>
+							</p>
+			</section>
+			<section class = "content">
+				<img src = "image/pic01.jpg"></img>
+				<p>
+				<span class = "Lbold">테리토리</span>
+				<p> ...
+				</p></p>
+				
+			</section>
+		</section>
+
+
+
+		<section class = "project_shower" id = "page3" style = "display : none">
+			<section class = "content">
+				<img src = "image/projects/project1.png">
+				<p>
+					<span class = "Lbold">.</span>
+				<p> page3
+				</p>
+				</p>
+			</section>
+			<section class = "content">
+							<img src = "image/pic01.jpg">
+							<p>
+								<span class = "Lbold">.</span>
 							<p> 내용1
 							</p>
 							</p>
@@ -79,11 +153,16 @@
 			<section class = "content">
 				<img src = "image/pic01.jpg"></img>
 				<p>
-				<span class = "Lbold">제목2</span>
+				<span class = "Lbold">.</span>
 				<p> 내용2
 				</p></p>
 				
 			</section>
 		</section>
+
+
+
+
+
 	<footer></footer>
 	</body>

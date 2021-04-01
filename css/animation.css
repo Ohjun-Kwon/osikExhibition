@@ -1,0 +1,56 @@
+.hidden {
+	display : none;
+}
+.popright_fadein {
+	animation : popright_fadein 0.7s;	
+}
+
+@keyframes change_color {
+	from {
+		background-color :#1C1C1C;
+		color : white;
+	}
+	to {
+		background-color: white;
+		color : black;
+	}}
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+}}
+
+
+@keyframes moving_fadein {
+	from {
+		opacity: 0;
+		margin-left: 2%
+	}
+
+	to {
+		opacity: 1;
+		margin-left: 0%
+	}}
+ 
+@keyframes popup_fadein {
+	from {
+		transform : translateY(50px);
+		opacity: 0;
+	}
+	to {
+		transform : translateY(0px);
+		opacity: 1;
+}}
+
+@keyframes popright_fadein {
+	from {
+		transform : translateX(-100px);
+		opacity: 0;
+	}
+	to {
+		transform : translateY(0px);
+		opacity: 1;
+}}

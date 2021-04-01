@@ -78,6 +78,7 @@ h7{font-size : 0.8em;}
 	font-family: notosans_bold;
 }
 
+
 #head-bar{
 	top : -60px;
 	transition : top 0.5s;
@@ -166,6 +167,7 @@ h7{font-size : 0.8em;}
 	margin : 15% auto;
 }
 #big-content{
+	opacity : 0;
 	margin : 0 auto;
 	padding : 5%;
 	width : 100%;
@@ -185,14 +187,26 @@ h7{font-size : 0.8em;}
 }
 
 .introduce{
+		opacity : 0;
 		color : black;
 		font-family : notosans_bold;
 		display : block;
 		text-align : center;
 }
 
-
-@media screen and (min-width : 1000px) {
+.content{
+	width : 80%;
+	margin : 10px;
+	height : 700px;
+	background-color : white;
+}
+.award {
+	font-size : 0.8em;
+	color : gray;
+	text-align : center;
+	
+}
+@media screen and (min-width : 1100px) {
 	.profile_img {
 		width : 15%;
 		height : 15%;
@@ -204,6 +218,7 @@ h7{font-size : 0.8em;}
 		color : black;
 	}
 	#big-content{
+		opacity : 0;
 		margin : 0 auto;
 		padding : 3%;
 		width : 100%;
@@ -222,10 +237,10 @@ h7{font-size : 0.8em;}
 		padding : 2%;
 	}	
 	.content {
-		width : 40%;
+		width : 30%;
 		white-space : normal;
 		max-width : 500px;
-		min-width : 300px;
+		min-width : 150px;
 		height : 700px;
 		margin : 10px;
 		background-color : white;
@@ -234,7 +249,7 @@ h7{font-size : 0.8em;}
 #project_title {
 	
 	margin-top : 180px;
-	height : 200px;
+	height : 300px;
 	width : 100%;
 	background-image : 	url('../image/project.jpg');
 	background-size: cover;
@@ -247,11 +262,11 @@ h7{font-size : 0.8em;}
 	font-size : 3em;
 	text-align : center;
 	text-shadow: 0px 4px 4px black;
+	margin-bottom : 50px;
 	
 }
-#project_shower
+.project_shower
 {
-	white-space : nowrap;
 	display : flex;
 	margin-top : 60px;
 	width : 90%;
@@ -261,12 +276,16 @@ h7{font-size : 0.8em;}
 	justify-content : center;
 	align-items : center;
 }
-.content{
-	width : 80%;
-	margin : 10px;
-	white-space : normal;
-	height : 700px;
-	background-color : white;
+.project_shower section:nth-child(1) {
+	animation : popup_fadein 0.5s;
+}
+.project_shower section:nth-child(2) {
+	animation : popup_fadein 0.7s;
+	animation-delay : 0.05s;
+}
+.project_shower section:nth-child(3){
+	animation : popup_fadein 0.9s;
+	animation-delay : 0.1s;
 }
 .content img{
 	width : 100%;
@@ -277,9 +296,13 @@ h7{font-size : 0.8em;}
 .content p {
 	margin : 40px;
 	text-align : center;
+
+	animation : popright_fadein 0.4s;
 }
 #annual_button {
-	margin-top : 40px;
+	font-size : 0.3em;
+	margin-top : 50px;
+	margin-bottom : 50px;
 	width : 100%;
 	display : flex;
 	justify-content : center;
@@ -313,31 +336,3 @@ h7{font-size : 0.8em;}
 	font-family : notosans_bold;
 }
 
-@keyframes change_color {
-	from {
-		background-color :#1C1C1C;
-		color : white;
-	}
-	to {
-		background-color: white;
-		color : black;
-	}}
-@keyframes fadein {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}}
-@keyframes moving_fadein {
-	from {
-		opacity: 0;
-		margin-left: 2%
-	}
-
-	to {
-		opacity: 1;
-		margin-left: 0%
-	}}
- 

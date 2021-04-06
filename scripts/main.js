@@ -11,6 +11,9 @@ function scrollFunction() {
 		
 		$("#big-content").attr('class','popright_fadein');
 	}
+	if (document.documentElement.scrollTop > window.innerHeight*2.5){
+		$("#skill-title").attr('class','popright_fadein');
+	}
 }
 
 $(document).ready(function(){

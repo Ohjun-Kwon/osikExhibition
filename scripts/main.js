@@ -1,5 +1,7 @@
 window.onscroll = function() {scrollFunction();}
 function scrollFunction() {
+	//$("").scrollTop 하면 전역 스크롤 위치를 구할 수 있다.
+	
 	if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60){
 		document.getElementById("head-bar").style.top = "0px";
 	}else{
@@ -11,8 +13,16 @@ function scrollFunction() {
 		
 		$("#big-content").attr('class','popright_fadein');
 	}
-	if (document.documentElement.scrollTop > window.innerHeight*2.5){
+	if (document.documentElement.scrollTop > $("#skill-content").offset().top - 300){
+		$("#skill-title").css('opacity','1');
 		$("#skill-title").attr('class','popright_fadein');
+
+	}
+	else
+	{
+		
+		$("#skill-title").css('opacity','0');
+		$("#skill-title").attr('class','popright_fadeout');
 	}
 }
 
@@ -51,4 +61,3 @@ function setDisplay(){
         $('#page3').show();
     }
 }
-

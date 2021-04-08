@@ -3,12 +3,15 @@
 	<link rel="stylesheet" type="text/css" href="css/main_style.css">
 	<link rel="stylesheet" type="text/css" href="css/star_effect.css">
 	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/star.css">
 	<head>
 		
 		<script src="scripts/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
+		<script type = "text/javascript" src = "scripts/star.js"></script>
 	</head>
 	<body class = "mainpage">
+		<div class = "stars"> </div>
 		<header>
 			<ul id = "head-bar">
 				<li><a href = "#big-content">CONTACT</a></li>
@@ -51,8 +54,7 @@
 			</div>
 		</section>
 	
-		<div id = "project_title">PROJECTS
-	
+		<div id = "project_title">Projects
 			<div id = "menu-button">
 			<label class="box-radio-input"><input type="radio" name="cp_item" id = "2019" value="2019" checked="checked" onchange = "setDisplay()"><span>Games</span></label>
 			<label class="box-radio-input"><input type="radio" name="cp_item" id = "2018" value="2018" onchange = "setDisplay()"><span>Webs</span></label>
@@ -173,7 +175,9 @@
 
 	</div>
 	<div id = "skill-content">
-			<div id = "skill-title">SKILLS</div>
+			<div class = "stars">
+			</div>
+			<div id = "skill-title">Skills</div>
 	</div>
 
 	<footer></footer>

@@ -1,0 +1,22 @@
+
+@keyframes twincle1 { 
+    0%{opacity:1;}
+	30% {opacity : 0}
+	55% {opacity : 1}
+    70% {opacity:0.3;}
+	100% {opacity : 1;}
+} 
+.stars{
+  position:absolute;
+}
+.star{
+	opacity : 0;
+	width:2px;
+	height:2px;
+	background:white;
+	border-radius:100%;
+	position:absolute;
+	top:300px;
+	left:300px;
+	animation : twincle1 9s 1s infinite;
+}

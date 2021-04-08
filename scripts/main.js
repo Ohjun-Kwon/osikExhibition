@@ -16,13 +16,6 @@ function scrollFunction() {
 	if (document.documentElement.scrollTop > $("#skill-content").offset().top - 300){
 		$("#skill-title").css('opacity','1');
 		$("#skill-title").attr('class','popright_fadein');
-
-	}
-	else
-	{
-		
-		$("#skill-title").css('opacity','0');
-		$("#skill-title").attr('class','popright_fadeout');
 	}
 }
 

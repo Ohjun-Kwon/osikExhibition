@@ -78,7 +78,7 @@ h3{font-size : 1.6em;}
 h4{font-size : 1.4em;}
 h5{font-size : 1.2em;}
 h6{font-size : 1em;}
-h7{font-size : 0.8em;}
+h7{font-size : 0.4em;}
 .Llight {
 	font-family: notosans_light;
 }
@@ -317,7 +317,11 @@ h7{font-size : 0.8em;}
 }
 
 
-
+.stars{
+	width : 100%;
+	height : 1180px;
+	overflow : hidden;
+}
 
 
 #skill-title{
@@ -334,9 +338,10 @@ h7{font-size : 0.8em;}
 	color : white;
 }
 #skill-content {
+	overflow : hidden;
 	margin-top : 150px;
 	width : 100%;
-	height : 1080px;
+	height : 1180px;
 	background-image : 	url('../image/skill_background.png');
 	background-size: cover;
 	background-position: center;
@@ -360,18 +365,28 @@ h7{font-size : 0.8em;}
 }
 .rank {
 	opacity : 0;
+	position : relative;
 	transform-style:linear;
-	transition-duration:0.3s;	
+	transition-duration:0.3s;
+	top : 100%;
+	transition : all 0.35s;
+
+	font-family : notosans_light;
+	color : white;
+	font-size : 1em;
 }
 .skills-logo:hover{
 	cursor : pointer;
 	transform : translateY(-20px);
+	background-color : white;
+	color : black;
+	font-size : 1.1em;
 }
 .skills-logo:hover .rank {
-	transform : opacity(1);
+	opacity : 1;
+	top : 75%;
 }
 .icon-shower{
-	
 	flex-wrap : wrap;
 	max-width : 1200px;
 	margin : 50px auto 0px auto;
@@ -381,8 +396,33 @@ h7{font-size : 0.8em;}
 	width : 80%;
 	padding : 20px;
 }
-
-
+#icon-selector{
+	margin : auto;
+	width : 210px;
+	display : flex;
+	margin-top : 20px;
+}
+#contact-icon {
+	margin : auto;
+}
+#contactme {
+	background-color : white;
+	width : 100%;
+	height : 200px;
+	padding : 30px;
+	text-align : center;
+	font-family : pari;
+	color : #869AB8;
+	font-size : 2em;
+	line-height: 0.75;
+}
+.under-line {
+	display : inline-block;
+	background-color : #869AB8;
+	width : 260px;
+	height : 1px;
+	opacity : 0.9;
+}
 @media screen and (min-width : 1100px) {
 	.profile_img {
 		width : 15%;

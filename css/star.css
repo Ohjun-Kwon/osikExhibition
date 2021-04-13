@@ -6,9 +6,7 @@
     70% {opacity:0.3;}
 	100% {opacity : 1;}
 } 
-.stars{
-  position:absolute;
-}
+
 .star{
 	opacity : 0;
 	width:2px;
